@@ -5,25 +5,18 @@ public class program_9
 
 	public static void main(String[] args) 
 	{
-		int a,b,c,j,i;
-		for(a=1;a<1000;a++)
+	   int a,b,c=0;
+           int s=1000;
+           for(a=0;a<s/3;a++)
+            {
+             for(b=a+1;b<s/2;b++)
+	      {
+	       c=s-a-b;
+		if(a*a+b*b==c*c)
 		{
-			for(b=a;b<1000;b++)
-			{
-				for(c=b;c<1000;c++)
-				{
-					i=a*a;
-					j=b*b;
-					if((i+j)==(c*c)&&(a+b+c)==1000)
-					{
-                        System.out.println(a*b*c);
-                        break;
-						
-					}
-				}
-			}
+			System.out.println(a*b*c);
 		}
-
+	      }
+           }
 	}
-
-}
+       }
