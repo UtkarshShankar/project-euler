@@ -5,16 +5,9 @@ public class program_6
 
 	public static void main(String[] args) 
 	{
-		int i,a=0,c,b=0;
-		for(i=1;i<=100;i++)
-		{
-			a=a+(i*i);
-			b=b+i;
-			
-		}
-		c=(b*b)-a;
-		System.out.println(c);
-
+		int s1 = 0, s2=0;
+                s1=(100*101*201)/6;
+                s2=(100*101)/2;
+                 System.out.println((s2*s2)-s1);
 	}
-
 }
