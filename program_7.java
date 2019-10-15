@@ -5,26 +5,25 @@ public class program_7
 
 	public static void main(String[] args) 
 	{
-     int i=1,j,c=1,k=0;
-     while(c<10002)
-     {
-    	 i++;
-    	 if(i%2==1||i==2)
-    	 {
-    		 for(j=1;j<=i;j++)
-    	 
-    	 {
-    		 if(i%j==0)
-    			 k++;
-    		 }
-    	 if(k==2)
-    	 {	 c++;
-    	 }
-    	 }
-    	k=0;
-     }
-     System.out.println(i);
-
-	}
-
+         int i, n=1. c=0, prime=0;
+	     while(prime!=10001)
+	     {
+	    	 for(i=3;i<=Math.sqrt(n);i+=2)
+	    	 {
+	    		 if(n%i==0)
+	    		 {
+	    			 c++;
+	    			 break;
+	    		 }
+	    	 }
+	    	 if(c==0)
+	    		 prime++;
+	    		 if(prime==10001)
+	    		 {
+	    			 System.out.println(n);
+	    		 }
+	    			 c=0;
+	    			 n+=2;
+	     }
+}
 }
